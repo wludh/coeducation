@@ -400,7 +400,7 @@
     break-inside: avoid; }
   .items.show.gallery .flex {
     height: 100vh;
-    margin: 0 -21px;
+    margin: 0;
     -ms-flex-pack: justify;
         justify-content: space-between;
     position: absolute;
@@ -420,7 +420,7 @@
     width: 65%;
     height: 100%;
     background: #333;
-    margin-left: 21px; }
+    margin-left: 0; }
   .items.show #itemfiles-stage {
     width: 100%;
     height: 80%;
@@ -448,7 +448,7 @@
     max-width: none; }
   .items.show.gallery .item-metadata {
     width: 35%;
-    padding: 0 21px;
+    padding: 0 21px 0 30px;
     overflow-y: scroll;
     word-wrap: break-word; }
   .item-metadata h3 {
@@ -1130,3 +1130,13 @@
   .viewer /*CSS for Universal Viewer*/ {
     width="100%";
   }
+ /*trying to fix the scrollbar problem*/
+ body.admin-bar.items.show.gallery {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+ body.admin-bar.items.show.gallery::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
