@@ -417,7 +417,7 @@
   .admin-bar.items.show.gallery #content {
     margin-top: calc(-41px - 73.5px); }
   .items.show #itemfiles {
-    width: 75%;
+    width: 65%;
     height: 100%;
     background: #333;
     margin-left: 21px; }
@@ -447,7 +447,7 @@
     width: auto;
     max-width: none; }
   .items.show.gallery .item-metadata {
-    width: 25%;
+    width: 35%;
     padding: 0 21px;
     overflow-y: scroll;
     word-wrap: break-word; }
